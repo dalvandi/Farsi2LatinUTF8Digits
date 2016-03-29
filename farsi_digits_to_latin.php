@@ -12,7 +12,7 @@
 		for($i=0; $i<count($chars); $i++)
 		{
 			$uc = unpack('H*',$chars[$i])[1];
-			if(array_key_exists($uc), $conversion)
+			if(array_key_exists($uc, $conversion))
 				$chars[$i] = $conversion[$uc];
 		}
 		
